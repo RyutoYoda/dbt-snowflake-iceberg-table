@@ -1,0 +1,12 @@
+snowflake_iceberg:
+  target: default
+  outputs:
+    default:
+      type: snowflake
+      role: TRANSFORMER
+      warehouse: COMPUTE_WH
+      database: SAMPLE_DATABASE
+      schema: ANALYTICS
+      account: 'YOUR_ACCOUNT'
+      user: 'YOUR_USERNAME'
+      authenticator: 'externalbrowser'

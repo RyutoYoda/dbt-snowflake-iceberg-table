@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: SAMPLE_DATABASE
+    schema: RAW_DATA
+    tables:
+      - name: sales_transactions
+        description: Raw sales transaction data
+        columns:
+          - name: transaction_id
+            description: Unique transaction identifier
+          - name: customer_id
+            description: Customer identifier
+          - name: category
+            description: Product category
+          - name: transaction_date
+            description: Date of transaction
+          - name: total_amount
+            description: Total transaction amount
